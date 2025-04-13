@@ -1,0 +1,54 @@
+# 🧪 Test Plan Template
+
+Use this template to document your test plan for any software project.
+
+---
+
+## 📌 Project Details
+
+**Project Name:**  
+[Enter project name here]
+
+**Test Scope:**  
+[Describe what will be tested — features, components, platforms, etc.]
+
+**Testing Types:**  
+- ✅ Functional  
+- ✅ Regression  
+- ✅ Usability  
+- 🔲 Load/Performance (optional)  
+- 🔲 Security (optional)  
+
+**Test Schedule:**  
+| Phase               | Start Date | End Date |
+|--------------------|------------|----------|
+| Test Planning       | [Date]     | [Date]   |
+| Test Case Creation  | [Date]     | [Date]   |
+| Test Execution      | [Date]     | [Date]   |
+| Bug Retesting       | [Date]     | [Date]   |
+| Final Sign-off      | [Date]     | [Date]   |
+
+**Tools Used:**  
+- [ ] TestRail / Zephyr / Xray  
+- [ ] Selenium / Playwright  
+- [ ] Postman / Swagger  
+- [ ] JIRA / Azure DevOps  
+
+**Risks & Mitigation:**  
+| Risk                          | Impact | Likelihood | Mitigation Plan                     |
+|-------------------------------|--------|------------|-------------------------------------|
+| Test environment not ready    | High   | Medium     | Request setup early, use backups    |
+| Requirements not finalized    | High   | High       | Clarify scope before test writing   |
+| Short test execution window   | Medium | Medium     | Prioritize high-risk test cases     |
+
+---
+
+## ✅ Test Case Template (Optional)
+
+You can create a separate file: `test-cases/test-cases.md` and use:
+
+```markdown
+| Test ID | Feature        | Description                  | Steps | Expected Result | Status |
+|---------|----------------|------------------------------|-------|------------------|--------|
+| TC001   | Login          | Valid login with email/pass  | ...   | Dashboard loads  | Pass   |
+| TC002   | Forgot Password| Reset with valid email       | ...   | Email sent       | Fail   |
